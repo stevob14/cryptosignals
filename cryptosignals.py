@@ -27,7 +27,7 @@ def bullish_filter(data):
     return filtered_data
 
 def bearish_filter(data):
-    filtered_data = [x for x in data if x['rank'] < 101 and (x['quotes']['USD']['volume_24h_change_24h'] < -1 and x['quotes']['USD']['percent_change_24h'] < -1)]
+    filtered_data = [x for x in data if x['rank'] < 101 and (x['quotes']['USD']['volume_24h_change_24h'] > 1 and x['quotes']['USD']['percent_change_24h'] < -1)]
     return filtered_data
 
 def relativeStrengthIndex(prices,n):
