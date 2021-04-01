@@ -108,7 +108,6 @@ for x in all_data:
     previous_8 = ema8.pop()
     previous_21 = ema21.pop()
 
-
     if current_8 > current_21 and previous_8 < previous_21:
         trend = "Upward Trend"
 
