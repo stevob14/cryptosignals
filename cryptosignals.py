@@ -1,6 +1,9 @@
 import requests
 import time
 
+## I am not your financial adviser, nor is this tool. Use this program as an educational tool, and nothing more. 
+## None of the contributors to this project are liable for any losses you may incur. Be wise and always do your own research.
+
 def coinpaprika_api():
     api = "https://api.coinpaprika.com/v1/tickers/"
     try:
